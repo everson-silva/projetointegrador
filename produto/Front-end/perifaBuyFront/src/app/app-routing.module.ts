@@ -9,6 +9,9 @@ import { ComponenteLojaFarmaciaComponent } from './componente-loja-farmacia/comp
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 import { ContatoComponent } from './contato/contato.component';
 import { CadastroEmpresaComponent } from './cadastro-empresa/cadastro-empresa.component';
+import { RestauranteComponent } from './restaurante/restaurante.component';
+import { ServicosGeraisComponent } from './servicos-gerais/servicos-gerais.component';
+import { MerceariasComponent } from './mercearias/mercearias.component';
 
 
 const routes: Routes = [
@@ -21,6 +24,9 @@ const routes: Routes = [
   {path:'forma-pagamento', component: FormaPagamentoComponent},
   {path:'inicio', component: InicioComponent},
   {path:'componente-loja-farmacia', component: ComponenteLojaFarmaciaComponent},
+  {path:'restaurante', component: RestauranteComponent},
+  {path:'servicos-gerais', component: ServicosGeraisComponent},
+  {path:'mercearia', component: MerceariasComponent},
   {path:'contato', component: ContatoComponent},
 ];
 

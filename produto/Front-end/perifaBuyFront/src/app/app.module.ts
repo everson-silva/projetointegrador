@@ -22,6 +22,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
 import { ServicosGeraisComponent } from './servicos-gerais/servicos-gerais.component';
 import { MerceariasComponent } from './mercearias/mercearias.component';
+import { RestauranteComponent } from './restaurante/restaurante.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MerceariasComponent } from './mercearias/mercearias.component';
     ContatoComponent,
     MeuPerfilComponent,
     ServicosGeraisComponent,
-    MerceariasComponent
+    MerceariasComponent,
+    RestauranteComponent
 
   ],
   imports: [
