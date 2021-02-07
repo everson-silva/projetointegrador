@@ -3,13 +3,15 @@
 }
 /* Usando a classe abaixo para definir como o bloco das redes sociais serão exibidos */
 ul.social-network li{
-    display: inline;
-    margin: 0;
-    padding: 5px;
+    display: inline;    
 }
+ul.social-network {
+    padding: 0px;    
+}
+
 /* usando a classe abaixo para definir como os ícones das redes sociais serão exibidos */
 .fa{
     font-size: 50pt;
     color: black;
-    margin: 30px
+    margin: 35px
 }
