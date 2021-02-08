@@ -12,6 +12,7 @@ import { CadastroEmpresaComponent } from './cadastro-empresa/cadastro-empresa.co
 import { RestauranteComponent } from './restaurante/restaurante.component';
 import { ServicosGeraisComponent } from './servicos-gerais/servicos-gerais.component';
 import { MerceariasComponent } from './mercearias/mercearias.component';
+import { PadariaComponent } from './padaria/padaria.component';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path:'servicos-gerais', component: ServicosGeraisComponent},
   {path:'mercearia', component: MerceariasComponent},
   {path:'contato', component: ContatoComponent},
+  {path:'padaria', component: PadariaComponent},
 ];
 
 @NgModule({

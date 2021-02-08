@@ -48,9 +48,9 @@ import { RestauranteComponent } from './restaurante/restaurante.component';
     ServicosGeraisComponent,
     MerceariasComponent,
 
-    PadariaComponent
+    PadariaComponent,
 
-    RestauranteComponent
+    RestauranteComponent,
 
 
   ],
