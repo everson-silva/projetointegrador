@@ -20,6 +20,13 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ComponenteLojaFarmaciaComponent } from './componente-loja-farmacia/componente-loja-farmacia.component';
 import { ContatoComponent } from './contato/contato.component';
 import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
+import { ServicosGeraisComponent } from './servicos-gerais/servicos-gerais.component';
+import { MerceariasComponent } from './mercearias/mercearias.component';
+
+import { PadariaComponent } from './padaria/padaria.component';
+
+import { RestauranteComponent } from './restaurante/restaurante.component';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +44,14 @@ import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
     DestaquesPrincipaisComponent,
     ComponenteLojaFarmaciaComponent,
     ContatoComponent,
-    MeuPerfilComponent
+    MeuPerfilComponent,
+    ServicosGeraisComponent,
+    MerceariasComponent,
+
+    PadariaComponent,
+
+    RestauranteComponent,
+
 
   ],
   imports: [
