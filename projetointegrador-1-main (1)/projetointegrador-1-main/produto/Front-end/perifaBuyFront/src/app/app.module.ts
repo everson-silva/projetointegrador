@@ -20,7 +20,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ComponenteLojaFarmaciaComponent } from './componente-loja-farmacia/componente-loja-farmacia.component';
 import { ContatoComponent } from './contato/contato.component';
 import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
-import { ComponenteLojaPadariaComponent } from './componente-loja-padaria/componente-loja-padaria.component';
+
 import { ServicosGeraisComponent } from './servicos-gerais/servicos-gerais.component';
 import { MerceariasComponent } from './mercearias/mercearias.component';
 import { RestaurantesComponent } from './restaurantes/restaurantes.component';
@@ -43,7 +43,7 @@ import { PadariasComponent } from './padarias/padarias.component';
     ComponenteLojaFarmaciaComponent,
     ContatoComponent,
     MeuPerfilComponent,
-    ComponenteLojaPadariaComponent,
+
     ServicosGeraisComponent,
     MerceariasComponent,
     RestaurantesComponent,

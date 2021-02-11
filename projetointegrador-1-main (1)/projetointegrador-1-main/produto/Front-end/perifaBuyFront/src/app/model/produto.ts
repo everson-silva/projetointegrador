@@ -4,4 +4,5 @@ export class Produto{
     public precoUnitario:number
     public id_categoria_produto:number
     public imagem_produto:string
+    public descricao:string
 }
