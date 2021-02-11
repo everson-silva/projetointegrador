@@ -9,7 +9,7 @@ import { ComponenteLojaFarmaciaComponent } from './componente-loja-farmacia/comp
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 import { ContatoComponent } from './contato/contato.component';
 import { CadastroEmpresaComponent } from './cadastro-empresa/cadastro-empresa.component';
-import { ComponenteLojaPadariaComponent } from './componente-loja-padaria/componente-loja-padaria.component';
+
 import { ServicosGeraisComponent } from './servicos-gerais/servicos-gerais.component';
 import { MerceariasComponent } from './mercearias/mercearias.component';
 import { RestaurantesComponent } from './restaurantes/restaurantes.component';
@@ -26,7 +26,7 @@ const routes: Routes = [
   {path:'forma-pagamento', component: FormaPagamentoComponent},
   {path:'inicio', component: InicioComponent},
   {path:'farmacia/:id', component: ComponenteLojaFarmaciaComponent}, //levando da pagina home até a pagina farmacia - colocar para as próximas paginas ex: ferramentas/:id
-  {path:'padaria/:id', component: ComponenteLojaPadariaComponent},
+  
   {path:'servicos-gerais/:id', component: ServicosGeraisComponent},
   {path:'mercearias/:id', component: MerceariasComponent},
   {path:'restaurantes/:id', component: RestaurantesComponent},
