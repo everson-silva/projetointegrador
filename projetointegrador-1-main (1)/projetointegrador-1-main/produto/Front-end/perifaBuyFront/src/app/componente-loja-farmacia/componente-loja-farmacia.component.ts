@@ -25,8 +25,7 @@ export class ComponenteLojaFarmaciaComponent implements OnInit {
 
   findByIdCategoria(id: number){
     this.categoriaService.getByIdCategoria(id).subscribe((resp: CategoriaProduto ) =>{
-      this.categoria = resp
-    
+      this.categoria = resp    
     })
   }
 
