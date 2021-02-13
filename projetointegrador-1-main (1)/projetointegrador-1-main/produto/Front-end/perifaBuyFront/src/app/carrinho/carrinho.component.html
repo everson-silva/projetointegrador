@@ -50,26 +50,17 @@
 
 
         <tr class="">
-          <td class="align-middle">
-            <div class="flex-container card p-0">
-              <div>
-                <img class="wh-150 p-05"
-                  src="../../assets/img/farmacia/cimegripe.jpg"
-                  alt="Imagem de capa do card">
-              </div>
-              <div class="p-05">
-                <a href="#">
-                  FARMÁCIA DA MARCIA
-                </a>
-                <h6 class="">
-                  Cimegripe
-                </h6>
-                <p class="justify wh-650">
-                  Indicado para gripes e resfriados.
-                </p>
+          <div class="row w-100 d-flex justify-content-center ">
+            <div class="flex-wrap col-md-12 d-flex justify-content-center mb-5" >
+              <div class="card corFundo mx-4 mb-5 " style="width: 20%;">
+                <img src="{{produto.imagem_produto}}" class="card-img-top" alt="{{produto.nome}}">
+                <div class="card-body">
+                  <h5 class="card-title">{{produto.nome}}</h5>
+                  <h5 class="card-text">R$: {{produto.precoUnitario}}</h5>
+               </div>
               </div>
             </div>
-          </td>
+          </div>
           <td class="align-middle">
             <div class="centralizar">
               <nav aria-label="Navegação de página exemplo">
@@ -85,14 +76,14 @@
                     <div class="col-auto my-1">
                       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
                       <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                      
+
                         <option value="1">1</option>
-                        
+
                       </select>
                     </div>
                   </div>
                   <!--/ESCOLHA DA QUANTIDADE DE PRODUTOS-->
-                    
+
                   <li class="page-item">
                     <a class="botaoMais" href="#" aria-label="Próximo">
                       <span class="sr-only">Próximo</span>
@@ -100,11 +91,6 @@
                   </li>
                 </ul>
               </nav>
-            </div>
-          </td>
-          <td class="align-middle">
-            <div class="centralizar">
-              R$ 10,99
             </div>
           </td>
           <td class=" align-middle ">
