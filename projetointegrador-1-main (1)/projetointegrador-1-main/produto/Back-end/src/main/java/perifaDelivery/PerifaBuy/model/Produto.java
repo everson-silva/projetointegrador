@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -28,6 +29,9 @@ public class Produto {
 	@JsonIgnoreProperties("produto")
 	private CategoriaProduto categoria;
 
+	@OneToOne
+	private Carrinho carrinho;
+	
 	private String descricao;
 	
 	//@ManyToOne
@@ -83,6 +87,14 @@ public class Produto {
 
 	public void setImagem_produto(String imagem_produto) {
 		this.imagem_produto = imagem_produto;
+	}
+
+	public Carrinho getCarrinho() {
+		return carrinho;
+	}
+
+	public void setCarrinho(Carrinho carrinho) {
+		this.carrinho = carrinho;
 	}
 
 	
