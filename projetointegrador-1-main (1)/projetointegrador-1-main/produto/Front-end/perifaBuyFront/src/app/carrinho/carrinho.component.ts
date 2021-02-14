@@ -26,13 +26,14 @@ export class CarrinhoComponent implements OnInit {
 
   ngOnInit(){
 
-    window.scroll(0,0);
+    window.scroll(0,0)
+    this.findAllCarrinho()
   }
 
 
 
   findAllCarrinho(){
-    this.carrinhoService.getByIdCarrinho().subscribe((resp:Carrinho[])=>{
+    this.carrinhoService.getAllCarrinho().subscribe((resp:Carrinho[])=>{
       this.listaCarrinho = resp
       console.log(this.listaCarrinho)
     })
@@ -42,6 +43,8 @@ export class CarrinhoComponent implements OnInit {
     console.log(id)
     this.carrinhoService.DeleteById(id).subscribe(()=>{
       alert('Removido do carrinho com sucesso')
+      return false;
+    
       this.findAllCarrinho
     })
   }
