@@ -17,7 +17,9 @@ export class CarrinhoService {
     headers: new HttpHeaders().set('Authorization',environment.token)
   }
 
-
+  getAllCarrinho():Observable<Carrinho[]>{
+    return this.http.get<Carrinho[]>('http://localhost:8080/carrinho/getAll')
+  }
 
   getByIdCarrinho():Observable<Carrinho[]>{
     return this.http.get<Carrinho[]>('http://localhost:8080/carrinho/meu_carrinho/{id}', this.token)
