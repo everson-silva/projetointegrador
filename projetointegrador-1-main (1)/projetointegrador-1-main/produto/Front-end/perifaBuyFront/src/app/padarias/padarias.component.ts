@@ -20,6 +20,7 @@ export class PadariasComponent implements OnInit {
   listaProdutos:Produto[];
   carrinho:Carrinho = new Carrinho();
 
+  produtinho:Produto = new Produto;
   constructor(
     private categoriaService: CategoriaService,
     private route: ActivatedRoute,
@@ -32,6 +33,14 @@ export class PadariasComponent implements OnInit {
     this.idCategoria= this.route.snapshot.params['id']
     this.findByIdCategoria(this.idCategoria)
   }
+
+  findByIdProduto(id:number){
+    this.produtoService.getByIdProduto(id).subscribe((resp:Produto)=>{
+      this.produtinho = resp
+      console.log('teste')
+    })
+  }
+
 
   findByIdCategoria(id: number){
     this.categoriaService.getByIdCategoria(id).subscribe((resp: CategoriaProduto ) =>{
@@ -46,6 +55,7 @@ export class PadariasComponent implements OnInit {
       this.carrinho = new Carrinho()
       this.carrinho.produto = resp
       this.postCarrinho(this.carrinho)
+      console.log(this.carrinho.produto)
     })
   }
 

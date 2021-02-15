@@ -32,7 +32,10 @@ public class CarrinhoController implements WebMvcConfigurer {
 	private CarrinhoRepository repository;
 	
 	
-	
+	@GetMapping("/getAll")
+	public ResponseEntity<List<Carrinho>> getAllCarrinho(){
+		return ResponseEntity.ok(repository.findAll());
+	}
 	
 	@GetMapping("/meu_carrinho/{id}")
 	public ResponseEntity<Carrinho> getById(@PathVariable Long id) {
@@ -46,7 +49,7 @@ public class CarrinhoController implements WebMvcConfigurer {
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
-	@PostMapping
+	@PostMapping("/post")
 	public ResponseEntity<Carrinho> post(@RequestBody Carrinho objeto)
 	{
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(objeto));
