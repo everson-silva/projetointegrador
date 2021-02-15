@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Carrinho } from '../model/carrinho';
 import { Produto } from '../model/produto';
 import { AuthService } from '../service/auth.service';
@@ -21,7 +22,8 @@ export class CarrinhoComponent implements OnInit {
   constructor(
     private authService:AuthService,
     private carrinhoService:CarrinhoService,
-    private produtoService:ProdutoService
+    private produtoService:ProdutoService,
+    private router: Router
   ) { }
 
   ngOnInit(){
@@ -43,9 +45,9 @@ export class CarrinhoComponent implements OnInit {
     console.log(id)
     this.carrinhoService.DeleteById(id).subscribe(()=>{
       alert('Removido do carrinho com sucesso')
-      return false;
-    
+
       this.findAllCarrinho
+      this.router.navigate(['/carrinho'])
     })
   }
 }

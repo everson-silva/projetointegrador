@@ -51,8 +51,15 @@
 
         <tr class="">
         <div class="row w-100 d-flex justify-content-center ">
-            <div class="flex-wrap col-md-6 d-flex justify-content-center mb-5" *ngFor="let produto of listaCarrinho">
-              <div class="card corFundo mx-4 mb-5 " style="width: 45%;">
+
+
+
+          <!--Se for alterar o design da apresentação dos produtos no carrinho nao esquecer de fazer dentro dessa div-->
+          <div class="flex-wrap col-md-6 d-flex justify-content-center mb-5" *ngFor="let produto of listaCarrinho">
+
+
+
+            <div class="card corFundo mx-4 mb-5 " style="width: 45%;">
                 <img src="{{produto.produto.imagem_produto}}" class="card-img-top" alt="Imagem Produto">
                 <div class="card-body">
                   <h5 class="card-title">{{produto.produto.nome}}</h5>

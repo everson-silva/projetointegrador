@@ -8,11 +8,12 @@ insert into tb_categoria_produto values
 	(default, 'mercearia'),
 	(default, 'serviços gerais'),
 	(default, 'comidas e bebidas');
+
     
 -- populando produtos
 select * from tb_produto;
 insert into tb_produto values 
-	(default,'Todo conforto','https://i.imgur.com/BwEPPF8.png','FRALDA-Tam G',25.19,1),
+	(default,'Todo conforto','https://i.imgur.com/BwEPPF8.png','FRALDA-Tam G',25,1),
     (default,'Alívio imediato ao mal estar','https://i.imgur.com/PnF2zTD.png','ESTOMAZIL',1.99,1),
     (default,'Para higienizar da melhor forma','https://i.imgur.com/jWKKCnB.jpg','LENCINHOS UMED.',8.99,1),
     (default,'Indicado para gripes e resfriados','https://i.imgur.com/OhgJePd.jpg','CIMEGRIPE',10.99,1),
@@ -50,12 +51,10 @@ insert into tb_produto values
     
     (default,'Com deliciosas fatias de bacon','https://i.imgur.com/YxWX3BD.jpg','X-BURGER',10.99,5),
     (default,'Especial da casa','https://i.imgur.com/IKZF7Tg.jpg','ULTRA X4',9.99,5),
-    (default,'Alívio imediato ao mal estar','https://i.imgur.com/EPenDKh.jpg','BATATA FRITA',9.99,5),
-    (default,'Para higienizar da melhor forma','https://i.imgur.com/fUKmbZh.png','PORÇÃO DE CALABRESA',19.99,5),
+    (default,'Alivia a sua fome','https://i.imgur.com/EPenDKh.jpg','BATATA FRITA',9.99,5),
+    (default,'Frita na hora','https://i.imgur.com/fUKmbZh.png','PORÇÃO DE CALABRESA',19.99,5),
 	(default,'350ml','https://i.imgur.com/mBr18Wr.jpg','COCA-COLA',5.99,5),
     (default,'Natural e refrescante','https://i.imgur.com/40UcW0p.jpg','SUCO DE MORANGO',2.99,5),
     (default,'350ml','https://i.imgur.com/lA3cn3M.jpg','SPRITE',3.99,5),
     (default,'Natural e refrescante','https://i.imgur.com/s5excCq.jpg','SUCO DE LARANJA',6.99,5);
-    
-    
     
