@@ -11,21 +11,21 @@ import { CategoriaService } from '../service/categoria.service';
 export class ComponenteLojaFarmaciaComponent implements OnInit {
 
   categoria: CategoriaProduto= new CategoriaProduto()
-  idCategoria: number 
+  idCategoria: number
   constructor(
     private categoriaService: CategoriaService,
     private route: ActivatedRoute
   ) { }
 
   ngOnInit() {
-  
+
     this.idCategoria= this.route.snapshot.params['id']
     this.findByIdCategoria(this.idCategoria)
   }
 
   findByIdCategoria(id: number){
     this.categoriaService.getByIdCategoria(id).subscribe((resp: CategoriaProduto ) =>{
-      this.categoria = resp    
+      this.categoria = resp
     })
   }
 
