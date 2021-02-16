@@ -5,6 +5,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { LOCALE_ID } from '@angular/core';// IMPORTANT
+import { registerLocaleData } from '@angular/common';// IMPORTANT
+import localePt from '@angular/common/locales/pt';// IMPORTANT
+registerLocaleData(localePt); // IMPORTANT
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
@@ -20,7 +24,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ComponenteLojaFarmaciaComponent } from './componente-loja-farmacia/componente-loja-farmacia.component';
 import { ContatoComponent } from './contato/contato.component';
 import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
-import { ComponenteLojaPadariaComponent } from './componente-loja-padaria/componente-loja-padaria.component';
+
 import { ServicosGeraisComponent } from './servicos-gerais/servicos-gerais.component';
 import { MerceariasComponent } from './mercearias/mercearias.component';
 import { RestaurantesComponent } from './restaurantes/restaurantes.component';
@@ -43,7 +47,7 @@ import { PadariasComponent } from './padarias/padarias.component';
     ComponenteLojaFarmaciaComponent,
     ContatoComponent,
     MeuPerfilComponent,
-    ComponenteLojaPadariaComponent,
+
     ServicosGeraisComponent,
     MerceariasComponent,
     RestaurantesComponent,
@@ -59,7 +63,8 @@ import { PadariasComponent } from './padarias/padarias.component';
   ],
   providers: [{
     provide: LocationStrategy,
-    useClass: HashLocationStrategy
+    useClass: HashLocationStrategy,
+    // provide: LOCALE_ID, useValue: "pt-BR" tem que ver como fazer isso aqui funcionar
   }],
   bootstrap: [AppComponent]
 })

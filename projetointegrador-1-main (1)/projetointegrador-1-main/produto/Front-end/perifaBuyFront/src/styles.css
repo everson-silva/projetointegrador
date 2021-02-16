@@ -15,5 +15,14 @@ html{
   font-size: 100px;
 }
 
+.card-img-top{
+  width: 324px;
+  height: 324px;
+}
+
+.fs-descricao{
+  font-size: 16pt;
+}
+
 
 

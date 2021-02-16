@@ -1,30 +1,23 @@
-  <!--Carrinho banner-->
-      <div class="corPerifa">
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container">
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-8">
-                <img
-                  class="meuCarrinho_imagem"
-                  src="../../assets/img/carrinho (2).png"
-                  alt="meuCarrinho"
-                />
-              </div>
-            </div>
-          </div>
+<!--Carrinho banner-->
+<!-- header -->
+<div class="corPerifa">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8">
+          <img class="meuCarrinho_imagem" src="../../assets/img/carrinho (2).png" alt="meuCarrinho" />
         </div>
       </div>
-
-    <!--Fim banner carrinho-->
-
+    </div>
+  </div>
+</div>
+<!--Fim banner carrinho-->
 <!--Carrinho-->
 <div class="container-fluid">
-
-
-  <!--Listagem de Produtos-->
   <div class="table-responsive-sm ">
     <table class="table">
       <thead>
+        <!--Linha fora do laço de repetição acima ^-->
         <tr>
           <th>
             Seus produtos:
@@ -47,25 +40,18 @@
         </tr>
       </thead>
       <tbody>
-
-
-        <tr class="">
+        <tr class="" *ngFor="let produto of listaCarrinho">
           <td class="align-middle">
             <div class="flex-container card p-0">
               <div>
-                <img class="wh-150 p-05"
-                  src="../../assets/img/farmacia/cimegripe.jpg"
-                  alt="Imagem de capa do card">
+                <img class="wh-150 p-05" src="{{produto.produto.imagem_produto}}" alt="Imagem de capa do card">
               </div>
               <div class="p-05">
-                <a href="#">
-                  FARMÁCIA DA MARCIA
-                </a>
                 <h6 class="">
-                  Cimegripe
+                  {{produto.produto.nome}}
                 </h6>
                 <p class="justify wh-650">
-                  Indicado para gripes e resfriados.
+                  {{produto.produto.descricao}}
                 </p>
               </div>
             </div>
@@ -79,20 +65,19 @@
                       <span class="sr-only">Anterior</span>
                     </a>
                   </li>
-
                   <!--ESCOLHA DA QUANTIDADE DE PRODUTOS-->
                   <div class="form-row align-items-center">
                     <div class="col-auto my-1">
                       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
-                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                      
+                      <select (change)="quantidade($event)" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                         <option value="1">1</option>
-                        
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
                       </select>
                     </div>
                   </div>
                   <!--/ESCOLHA DA QUANTIDADE DE PRODUTOS-->
-                    
                   <li class="page-item">
                     <a class="botaoMais" href="#" aria-label="Próximo">
                       <span class="sr-only">Próximo</span>
@@ -104,7 +89,7 @@
           </td>
           <td class="align-middle">
             <div class="centralizar">
-              R$ 10,99
+              {{produto.produto.precoUnitario | currency: 'BRL'}} 
             </div>
           </td>
           <td class=" align-middle ">
@@ -113,23 +98,19 @@
             </a>
           </td>
         </tr>
-
       </tbody>
     </table>
   </div>
   <!--FIM Listagem de Produtos-->
-
-
   <!--BOTÕES-->
   <div class="d-flex justify-content-between">
     <div class="p-2">
       <a routerLink="/inicio" class="btn btn-info active" role="button" aria-pressed="true">Continuar Comprando</a>
     </div>
-
     <div class="p-2">
-      <a routerLink="/forma-pagamento" class="btn btn-success active" role="button" aria-pressed="true">Finalizar compra</a>
+      <a routerLink="/forma-pagamento" class="btn btn-success active" role="button" aria-pressed="true">Finalizar
+        compra</a>
     </div>
   </div>
   <!--BOTÕES-->
-
 </div>

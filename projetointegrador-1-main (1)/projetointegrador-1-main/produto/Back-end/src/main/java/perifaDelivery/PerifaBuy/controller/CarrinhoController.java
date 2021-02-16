@@ -31,6 +31,12 @@ public class CarrinhoController implements WebMvcConfigurer {
 	@Autowired
 	private CarrinhoRepository repository;
 	
+	
+	@GetMapping("/getAll")
+	public ResponseEntity<List<Carrinho>> getAllCarrinho(){
+		return ResponseEntity.ok(repository.findAll());
+	}
+	
 	@GetMapping("/meu_carrinho/{id}")
 	public ResponseEntity<Carrinho> getById(@PathVariable Long id) {
 		return repository.findById(id).map(resp -> ResponseEntity.ok(resp))
