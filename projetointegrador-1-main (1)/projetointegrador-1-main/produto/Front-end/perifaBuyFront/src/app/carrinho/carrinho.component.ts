@@ -50,13 +50,20 @@ export class CarrinhoComponent implements OnInit {
 
 
 
-  remover(id: number) {
+  /*remover(id: number) {
     console.log(id)
     this.carrinhoService.DeleteById(id).subscribe(() => {
       alert('Removido do carrinho com sucesso')
-
       this.findAllCarrinho
       this.router.navigate(['/carrinho'])
     })
+  }*/
+
+  remover(id: number) {
+    console.log(id);
+    this.carrinhoService.deleteIdCarrinho(id).subscribe(() => { });
+    console.log('chegay');
+    alert('Removido do carrinho com sucesso!');
+    this.findAllCarrinho();
   }
 }
