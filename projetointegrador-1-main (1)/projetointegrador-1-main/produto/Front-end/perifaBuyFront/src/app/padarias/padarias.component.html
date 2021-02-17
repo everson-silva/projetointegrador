@@ -111,16 +111,10 @@
       <div class="card-body">
         <h5 class="card-title">{{produto.nome}}</h5>
         <p class="card-text fs-descricao">{{produto.descricao}}</p>
-
         <h5 class="card-text">{{produto.precoUnitario | currency: 'BRL' }}</h5>
         <a class="card-link fc fa fa-plus-circle fa-3x ml-140 pointer" aria-hidden="true" (click)='addCarrinho(produto.id)'></a>
-
-
-        
       </div>
-
     </div>
-
   </div>
-  <button type="button" class="btn btn-success mb-5" routerLink='/carrinho'>Finalizar compra</button>
+  <button type="button" class="btn btn-success mb-5" routerLink='/carrinho'>Ir para o carrinho</button>
 </div>

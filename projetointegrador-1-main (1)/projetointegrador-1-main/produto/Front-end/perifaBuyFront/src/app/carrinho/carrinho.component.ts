@@ -48,15 +48,10 @@ export class CarrinhoComponent implements OnInit {
     this.preco = this.preco * event.target.value;
   }
 
-
-
-  remover(id: number) {
-    console.log(id)
-    this.carrinhoService.DeleteById(id).subscribe(() => {
-      alert('Removido do carrinho com sucesso')
-
-      this.findAllCarrinho
-      this.router.navigate(['/carrinho'])
-    })
+  delete(id: number) {
+    console.log(id);
+    this.carrinhoService.deleteByIdCarrinho(id).subscribe(() => {});
+    alert('Produto removido do carrinho com sucesso!');
+    this.findAllCarrinho();
   }
 }
