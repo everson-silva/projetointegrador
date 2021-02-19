@@ -21,6 +21,7 @@
   </div>
 </div> -->
 
+
 <div class="container ml-day justify-content-center">
   <!--Dayane Imagem forma de pagamento cifrão-->
   <form>
@@ -29,10 +30,6 @@
     <div class="form-group col-md-6 d-flex justify-content-center">
       <label class="mx-3" for="name">Cliente Cadastrado</label>
       <h4 >: {{nome}}</h4>
-    </div>
-    <div class="form-group col-md-6 d-flex justify-content-center">
-      <label class="mx-3" for="numero_pedido">Numero do Pedido</label>
-      <h4>: 0001</h4>
     </div>
     <div class="form-group col-md-6 d-flex justify-content-center">
       <label class="mx-3" for="total_compra">Total da Compra</label>
@@ -116,11 +113,11 @@
 
 
 <!--Botao VOLTAR E CONFIRMAR -->
-<div class="d-flex justify-content-end">
+<div class="d-flex justify-content-center mb-3">
   <div class="p-2">
-  <i class="fa fa-arrow-circle-left mr-5" aria-hidden="true" routerLink="/carrinho">Voltar</i>
+    <button class="btn btn-danger pointer mx-5" aria-hidden="true" routerLink="/carrinho">Voltar</button>
   <label>
-    <i class="fa fa-check ml-100" aria-hidden="true" data-toggle="modal" data-target="#modalExemplo">Confirmar</i
+    <button class="btn btn-success pointer" aria-hidden="true" data-toggle="modal" data-target="#modalExemplo" (click)='delete()'>Confirmar</button
     ></label
   ></div>
 </div>

@@ -36,5 +36,11 @@ export class FormaPagamentoComponent implements OnInit {
     }
     return totalValor
   }
+
+  delete() {
+    console.log();
+    this.carrinhoService.deleteAllCarrinho().subscribe(() => {});
+    this.findAllCarrinho();
+  }
   
 }
