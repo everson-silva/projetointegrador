@@ -119,8 +119,8 @@
       <a routerLink="/inicio" class="btn btn-info" role="button" aria-pressed="true">Continuar Comprando</a>
     </div>
     <div class="p-2">
-      <button type="button" routerLink="/forma-pagamento" class="btn btn-success" role="button" aria-pressed="true">Finalizar
-        compra</button>
+      <a *ngIf='logado()' routerLink="/forma-pagamento" class="btn btn-success" role="button" aria-pressed="true">Finalizar compra</a>
+      <a *ngIf='!logado()' routerLink="/entrar" class="btn btn-success" role="button" aria-pressed="true" (click)="alerta()">Finalizar compra</a>
     </div>
   </div>
   <!--BOTÕES-->
