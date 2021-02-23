@@ -3,6 +3,22 @@
     margin: 0;
     box-sizing: border-box;
   }
+
+  .fs-46{
+    font-size: 46pt;
+    font-family: 'Courier New', monospace;
+  }
+
+  .fs-38{
+    font-size: 38pt;
+    font-family: 'Courier New', monospace;
+  }
+
+  .fs-26{
+    font-size: 20pt;
+    font-family: 'Courier New', monospace;
+  }
+
   .texto{
     font-size: 38pt;
   }
@@ -55,7 +71,7 @@
   /**** Social Icons *****/
   .social-icons {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -157,7 +173,7 @@
   }
 
   .margemTop{
-    margin-top: 10%;
+    margin-top: 20%;
   }
 
   @media only screen and (max-device-width: 768px){
@@ -197,9 +213,19 @@
       font-size: 13pt;
     }
 
-    .margemTop{
+    .margemTopo{
       margin-top: 10%;
     }
+
+    .fsNomes{
+      font-size: 12pt;
+    }
+
+    .fsdescricao{
+      font-size: 5pt;
+    }
+
+
     
     }
 

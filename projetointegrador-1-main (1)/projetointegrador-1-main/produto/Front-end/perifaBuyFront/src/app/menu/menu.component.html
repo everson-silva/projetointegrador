@@ -38,18 +38,20 @@
         class="dropdown-menu "
         aria-labelledby="navbarDropdownMenuLink"
       >
-        <a class="dropdown-item" routerLink="/entrar">Entre</a>
-        <a class="dropdown-item" routerLink="/cadastro-usuario"
-          >Cadastre-se</a
-        >
-        <a class="dropdown-item" href="#">Sair</a>
+      <a class="dropdown-item" *ngIf="!mostrarNome()" routerLink="/entrar">Entre</a>
+      <a class="dropdown-item" *ngIf="!mostrarNome()" routerLink="/cadastro-usuario"
+        >Cadastre-se</a
+      >
+      <!-- <a class="dropdown-item" *ngIf="mostrarNome()" routerLink="/meu-perfil">Meu perfil</a> -->
+      <a class="dropdown-item" *ngIf="mostrarNome()" onClick="window.location.reload()">Sair</a>
+
       </div>
     </li>
     <li class="nav-item" *ngIf="mostrarNome()">
       <a class="nav-link">{{nome}}</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link mr-3" routerLink="/contato">Contato</a>
+      <a class="nav-link mr-3" routerLink="/contato">Sobre nós</a>
     </li>
     </ul>
   </div>
