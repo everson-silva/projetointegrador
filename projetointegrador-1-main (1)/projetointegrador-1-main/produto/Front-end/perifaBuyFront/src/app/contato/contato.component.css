@@ -155,3 +155,53 @@
     transition-delay: 0.5s;
     opacity: 1;
   }
+
+  .margemTop{
+    margin-top: 10%;
+  }
+
+  @media only screen and (max-device-width: 768px){
+
+    .ajuste{
+        width: 200px;
+        height: 200px;
+    }
+     .texto-20{
+         font-size: 20pt;
+         
+     }
+    
+     .wh-card{
+        min-width: 200px;
+    }
+    .ajusteProduto{
+        max-width: 286px;
+        max-height: 180px;
+    }
+    
+    .posicionamento{
+      display: flex;
+      flex-flow: wrap;
+    }
+    .card-wrapper{
+      height: 250px;
+      width: 250px!important;
+    }
+
+    .card-image img, .card-image{
+      width: 200px!important;
+      height: 200px!important;
+    }
+    
+    .texto{
+      font-size: 13pt;
+    }
+
+    .margemTop{
+      margin-top: 10%;
+    }
+    
+    }
+
+
+    
