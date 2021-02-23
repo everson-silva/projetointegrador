@@ -86,6 +86,36 @@
             font-size: 14pt;
         }
 
-        .btn{
+        @media only screen and (max-device-width: 768px){
+
+            .ajuste{
+                width: 150px;
+                height: 140px;
+            }
+             .fs-20{
+                 font-size: 20pt;
+                 
+             }
             
-        }
+             .wh-card{
+                min-width: 200px;
+            }
+            .ajusteProduto{
+                max-width: 286px;
+                max-height: 180px;
+            }
+            
+            .paddingZero{
+                padding: 0%;
+            }
+
+            .reduzirBotao{
+                width: 65px;
+                height: 35px;
+                font-size: 7pt;
+            }
+
+            
+            
+            }
+            

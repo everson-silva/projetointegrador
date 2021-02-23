@@ -44,3 +44,55 @@ ul.social-network li{
 .ml-day{
   margin-left: 35%;
 }
+
+@media only screen and (max-device-width: 768px){
+
+  .ajuste{
+      width: 150px;
+      height: 140px;
+  }
+   .fs-17{
+       font-size: 17pt;
+       
+   }
+  
+   .wh-card{
+      min-width: 200px;
+  }
+  .ajusteProduto{
+      max-width: 286px;
+      max-height: 180px;
+  }
+  
+  .paddingZero{
+      padding: 0%;
+  }
+
+  .reduzirBotao{
+      width: 65px;
+      height: 35px;
+      font-size: 7pt;
+  }
+
+  .centralizar{
+    margin-left: auto;
+    margin-right: auto; 
+   }
+
+   .ajusteForm{
+    margin-right: 0%;
+   }
+  
+   .form-control{
+    min-width: auto;
+   }
+
+   .placeHolderTam{
+     width: 100px;
+   }
+
+   .fs-14{
+     font-size: 14pt;
+   }
+
+  }
