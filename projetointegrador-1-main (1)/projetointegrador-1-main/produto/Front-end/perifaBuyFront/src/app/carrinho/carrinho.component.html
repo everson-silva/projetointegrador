@@ -5,8 +5,9 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <div class="row d-flex justify-content-center">
-        <div class="col-md-8">
-          <img class="meuCarrinho_imagem" src="../../assets/img/carrinho (2).png" alt="meuCarrinho" />
+        <div class="col-md-12 d-flex justify-content-center">
+          <img class="meuCarrinho_imagem ajusteProduto mt-5" src="https://imgur.com/5sPmSkj.png"
+            alt="meuCarrinho" />
         </div>
       </div>
     </div>
@@ -20,11 +21,11 @@
       <thead>
         <!--Linha fora do laço de repetição acima ^-->
         <tr>
-          <th>
+          <th class="paddingZero">
             Seus produtos:
           </th>
 
-          
+
           <th>
             <!--
             <div class="centralizar">
@@ -62,8 +63,9 @@
               </div>
             </div>
           </td>
+
           <td class="align-middle">
-            <div class="centralizar">
+            <!--<div class="centralizar">
               <nav aria-label="Navegação de página exemplo">
                 <ul class="pagination ">
                   <li class="page-item ">
@@ -72,8 +74,7 @@
                     </a>
                   </li>
 
-
-                  <!--ESCOLHA DA QUANTIDADE DE PRODUTOS
+                  ESCOLHA DA QUANTIDADE DE PRODUTOS
                   <div class="form-row align-items-center">
                     <div class="col-auto my-1">
                       <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
@@ -85,9 +86,8 @@
                       </select>
                     </div>
                   </div>
-                  ESCOLHA DA QUANTIDADE DE PRODUTOS-->
+                  ESCOLHA DA QUANTIDADE DE PRODUTOS
 
-                  
                   <li class="page-item">
                     <a class="botaoMais" href="#" aria-label="Próximo">
                       <span class="sr-only">Próximo</span>
@@ -95,15 +95,17 @@
                   </li>
                 </ul>
               </nav>
-            </div>
+            </div>-->
           </td>
+
           <td class="align-middle">
             <div class="centralizar fs-14 font-weight-bold">
-              {{produto.produto.precoUnitario | currency: 'BRL'}} 
+              {{produto.produto.precoUnitario | currency: 'BRL'}}
             </div>
           </td>
           <td class="align-middle">
-            <a class="card-link fc fa fa-trash fa-2x ml-140 pointer d-flex justify-content-center" aria-hidden="true" (click)='delete(produto.id)'></a>
+            <a class="card-link fc fa fa-trash fa-2x ml-140 pointer d-flex justify-content-center" aria-hidden="true"
+              (click)='delete(produto.id)'></a>
             <!--<a>
               <i class="fa fa-trash-o text-dark fs-16 centralizar" aria-hidden="true" (click)='remover(produto.id)' ></i>
             </a>-->
@@ -116,14 +118,15 @@
   <!--BOTÕES-->
   <div class="d-flex justify-content-between mb-3">
     <div class="p-2">
-      <a routerLink="/inicio" class="btn btn-info" role="button" aria-pressed="true">Continuar Comprando</a>
+      <a routerLink="/inicio" class="btn btn-info reduzirBotao d-flex justify-content-center" role="button" aria-pressed="true">Continuar Comprando</a>
     </div>
     <div class="p-2">
-      <a *ngIf='logado()' routerLink="/forma-pagamento" class="btn btn-success" role="button" aria-pressed="true">Finalizar compra</a>
-      <a *ngIf='!logado()' routerLink="/entrar" class="btn btn-success" role="button" aria-pressed="true" (click)="alerta()">Finalizar compra</a>
+      <a *ngIf='logado()' routerLink="/forma-pagamento" class="btn btn-success reduzirBotao fs-10 d-flex justify-content-center" role="button"
+        aria-pressed="true">Finalizar compra</a>
+      <a *ngIf='!logado()' routerLink="/entrar" class="btn btn-success reduzirBotao d-flex justify-content-center" role="button" aria-pressed="true"
+        (click)="alerta()">Finalizar compra</a>
     </div>
   </div>
   <!--BOTÕES-->
 </div>
-
 <app-rodape></app-rodape>

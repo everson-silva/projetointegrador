@@ -2,7 +2,7 @@
     background-color:  #D3F3B5;
 }
 .ml-50{
-    margin-left: 10px; 
+    margin-left: 0px; 
     font-size: 40pt;  /*Aqui está distanciando o logo do nome da loja*/
 }
 .fc{
@@ -15,3 +15,26 @@
 .pointer{
     cursor: pointer;
 }
+
+@media only screen and (max-device-width: 768px){
+
+    .ajuste{
+        width: 150px;
+        height: 140px;
+    }
+     .texto-20{
+         font-size: 20pt;
+         
+     }
+    
+     .wh-card{
+        min-width: 200px;
+    }
+    .ajusteProduto{
+        max-width: 286px;
+        max-height: 180px;
+    }
+    
+    
+    }
+    

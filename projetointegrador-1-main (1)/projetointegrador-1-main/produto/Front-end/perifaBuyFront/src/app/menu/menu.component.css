@@ -5,3 +5,11 @@
   background-color: #FAE977;
 }
 
+@media only screen and (max-width:414px){
+
+  .fixed-top{
+    width: 100vw!important;
+  }
+  
+  }
+  
