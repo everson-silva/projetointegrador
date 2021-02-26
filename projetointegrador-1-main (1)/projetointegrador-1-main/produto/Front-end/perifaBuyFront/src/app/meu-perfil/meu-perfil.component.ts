@@ -39,4 +39,8 @@ export class MeuPerfilComponent implements OnInit {
     }
     return ok
   }
+
+  confirmarUser(event: any) {
+  }
+    
 }
