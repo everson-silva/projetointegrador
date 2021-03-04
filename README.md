@@ -3,9 +3,8 @@
 <p align="justify"> Perifabuy é uma plataforma de marketplace para os pequenos negócios locais, com o objetivo de ajuda-os na transição para o ambiente virtual. Queremos conectar o pequeno comerciante do seu bairro a você em um ambiente seguro e totalmente virtual. </p>
   <h3> Nossa Missão</h3>
   <p align="justify"> Nossa missão é fomentar a economia local, valorizando o trabalhador informal e estimulando o empreendedorismo. </p>
-<br>
 
-  <img src="https://desenvolvimentoparaweb.com/app/uploads/2017/02/1487684242-desenvolvedores-devem-participar-do-processo-de-design.jpg" width="300" align="right">
+  <img src="https://desenvolvimentoparaweb.com/app/uploads/2017/02/1487684242-desenvolvedores-devem-participar-do-processo-de-design.jpg" width="250" align="right">
   
 - :man_technologist: **Construido por desenvolvedorxs Full-Stack** :woman_technologist:
 - :books: **Versão Beta do projeto PerifaBuy que está em desenvolvimento e terá futuras implementações.**
