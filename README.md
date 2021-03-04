@@ -4,12 +4,11 @@
   <h3> Nossa Missão</h3>
   <p align="justify"> Nossa missão é fomentar a economia local, valorizando o trabalhador informal e estimulando o empreendedorismo. </p>
 <br>
-  
+  <img src="https://desenvolvimentoparaweb.com/app/uploads/2017/02/1487684242-desenvolvedores-devem-participar-do-processo-de-design.jpg" width="400" align="right">
 - :man_technologist: **Construido por desenvolvedorxs Full-Stack** :woman_technologist:
 - :books: **Versão Beta do projeto PerifaBuy que está em desenvolvimento e terá futuras implementações.**
 - :book: **Utilizado Scrum como metodologia ágil em nossa gestão de projeto.**
 
-<img src="http://stovity.com/wp-content/uploads/2019/01/developer-img-300x281.png" width="400" align="right">
 
 <h2>Tecnologias e ferramentas utilizadas</h2>
 
