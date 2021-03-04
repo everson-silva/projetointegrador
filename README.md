@@ -1,9 +1,11 @@
 <h1 align="center"> Olá Mundo, somos a PerifaBuy. </h1>
-<h3 align="center"> Nós unimos você ao comerciante mais próximo de você <h3>
-<p align="center"> Hoje em dia vemos muitos aplicativos de delivery, que une você a diversos comércios. E nós moradores de periferia, não temos acesso muitas vezes à entregas de pedidos, e viemos com a idéia de colocar todos as vertentes comerciais do seu bairro, à nossa aplicação.  </p>
-
+<h3 align="center"> Conectamos você ao comerciante mais próximo de você </h3>
+<p align="justify"> Perifabuy é uma plataforma de marketplace para os pequenos negócios locais, com o objetivo de ajuda-os na transição para o ambiente virtual. Queremos conectar o pequeno comerciante do seu bairro a você em um ambiente seguro e totalmente virtual. </p>
 <br>
+  <h3> Nossa Missão</h3>
+  <p align="justify"> Nossa missão é fomentar a economia local, valorizando o trabalhador informal e estimulando o empreendedorismo. </p>
 <br>
+  
 
 
 - :man_technologist: :woman_technologist: **Desenvolvedorxs Full-Stack**
@@ -14,7 +16,7 @@
 
 
 
-<img src="http://stovity.com/wp-content/uploads/2019/01/developer-img-300x281.png" width="450" align="right">
+<img src="http://stovity.com/wp-content/uploads/2019/01/developer-img-300x281.png" width="400" align="right">
 
 <h2>Tecnologias que utilizamos</h2>
 
